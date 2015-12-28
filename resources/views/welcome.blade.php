@@ -10,7 +10,6 @@
                 padding: 0;
                 width: 100%;
                 height: 100%;
-                color: #B0BEC5;
                 display: table;
                 font-weight: 100;
                 font-family: 'Lato';
@@ -35,13 +34,20 @@
             .quote {
                 font-size: 24px;
             }
+
+            a {
+                color: #222;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5</div>
-                <div class="quote">{{ Inspiring::quote() }}</div>
+                <a target="_blank" href="{{ action('Auth\AuthController@getLogin') }}">User Login</a> | <a target="_blank" href="{{ action('Auth\AdminController@getLogin') }}">Admin Login</a>
             </div>
         </div>
     </body>
